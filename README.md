@@ -14,7 +14,7 @@
 **Backend developer focused on reliability**: production systems that can't go down, such as **ERP ↔ e-commerce integration gateways**, **multi-tenant SaaS**, and **AI-powered automation**. At **BS Automação** I work as a **solo developer, from architecture to production**, mostly with **.NET / C#**, **Node.js**, and **TypeScript**, plus messaging and AI agents (Claude, MCP).
 
 - 🧑‍💻 5 years coding, 2 of them professionally
-- 🎓 B.Sc. in Computer Science, expected 2028
+- 🎓 B.Sc. in Computer Science, Cruzeiro do Sul University (2025–2028)
 - 🌎 Advanced English · Portuguese (native)
 - 🛠️ Solo dev: architecture → production
 - 📍 Brazil · remote or on-site · open to relocation
