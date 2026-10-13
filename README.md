@@ -10,7 +10,7 @@
 
 <img src="assets/sec-01.svg" width="75%" alt="01 // SOBRE MIM">
 
-Desenvolvedor **backend** focado em sistemas que movem a operação de empresas reais: **gateways de integração** entre ERPs e e-commerce, **SaaS multi-cliente** e **automações com IA**. Trabalho principalmente com **.NET / C#**, **Node.js** e **TypeScript**, com arquiteturas assíncronas, mensageria e agentes de IA (Claude, MCP) ligados aos sistemas de negócio.
+Desenvolvedor **backend** na **BS Automação**, construindo sistemas que movem a operação de empresas reais: **gateways de integração** entre ERPs e e-commerce, **SaaS multi-cliente** e **automações com IA**. Trabalho principalmente com **.NET / C#**, **Node.js** e **TypeScript**, com arquiteturas assíncronas, mensageria e agentes de IA (Claude, MCP) ligados aos sistemas de negócio.
 
 > 🇺🇸 Backend developer building ERP ↔ e-commerce integration gateways, multi-tenant SaaS, and AI automation in production. Full portfolio in PT / EN / JP at **[jingg.dev](https://jingg.dev)**.
 
@@ -31,14 +31,14 @@ Desenvolvedor **backend** focado em sistemas que movem a operação de empresas 
 
 | # | Projeto | O que faz | Stack | Acesso |
 |:-:|---|---|---|:-:|
-| 001 | **ABC Gateway** | Integra o ERP ao ecossistema Lexos da Loja ABC: pedidos concorrentes, produtos e estoque sincronizados em segundos.<br>**~5 pedidos/min · fim do recadastro manual · estoque físico = online** | .NET · RabbitMQ · Docker | 🔒 |
-| 002 | **Reportadin** | Relatórios multi-cliente sobre o ERP Saurus, com fila em background, tempo real e PDF | .NET · EF Core · React | [**ABRIR ↗**](https://reportadin.bsautomacao.com.br) |
-| 003 | **Emitle** | SaaS de emissão de NF-e e NFC-e, multi-empresa, com painel para contadores e assinatura | .NET · ACBr · RabbitMQ · Next.js | 🔒 |
-| 004 | **Fechadin** | Fechamento fiscal mensal automático: agente Windows lê os XMLs da loja e envia ZIP + PDF à contabilidade.<br>**93% mais acurácia · ~40h/mês de trabalho manual poupadas · 37 agentes ao vivo** | .NET · SignalR · React | 🔒 |
-| 005 | **BSChat MCP** | Servidor MCP multi-cliente com 76 ferramentas para IAs operarem a plataforma de atendimento | TypeScript · Fastify · MCP | 🔒 |
-| 006 | **Lookchina Gateway** | Integra o ERP ao e-commerce do Grupo Lookchina: pedidos em fila, catálogo e estoque sincronizados em tempo real | .NET · RabbitMQ · PostgreSQL | 🔒 |
-| 007 | **Assistente de Gestão** | App em que o lojista consulta e opera o ERP por voz, com alertas de custo | .NET · Expo · Next.js · IA | 🔒 |
-| 008 | **G7 Meet** | Transcrição e resumo de reuniões com IA, sem bot na sala, com ata e agenda | Node.js · Claude · Whisper | [**ABRIR ↗**](https://reunioes.bsautomacao.com.br) |
+| 001 | **ABC Gateway** | Integra o ERP ao ecossistema Lexos da Loja ABC.<br>**~5 pedidos/min · produtos sincronizados em segundos · estoque físico coerente com o online** | .NET · RabbitMQ · Docker | 🔒 |
+| 002 | **Fechadin** | Fechamento fiscal mensal automático para lojas.<br>**93% menos erros · ~40h/mês de trabalho manual poupadas · 37 agentes ao vivo** | .NET · SignalR · React | 🔒 |
+| 003 | **G7 Meet** | Reuniões resumidas por IA, com pontos críticos e tarefas criadas automaticamente. Ferramenta interna que virou produto | Node.js · Claude · Whisper | [**ABRIR ↗**](https://reunioes.bsautomacao.com.br) |
+| 004 | **Reportadin** | Relatórios multi-cliente sobre o ERP, gerados em background e baixados pelo próprio cliente | .NET · EF Core · React | [**ABRIR ↗**](https://reportadin.bsautomacao.com.br) |
+| 005 | **BSChat MCP** | Servidor MCP com 76 ferramentas: IAs operam atendimento e CRM de cada cliente em produção | TypeScript · Fastify · MCP | 🔒 |
+| 006 | **Lookchina Gateway** | Integração ERP ↔ e-commerce do Grupo Lookchina com filas e catálogo em tempo real | .NET · RabbitMQ · PostgreSQL | 🔒 |
+| 007 | **Emitle** | SaaS de emissão de NF-e e NFC-e, multi-empresa, com painel para contadores | .NET · ACBr · RabbitMQ · Next.js | 🔒 |
+| 008 | **Assistente de Gestão** | O lojista consulta e opera o ERP por voz, com alertas de custo | .NET · Expo · Next.js · IA | 🔒 |
 | 009 | **Organizei** | Tarefas, equipe e agenda com um agente de IA no Telegram como secretário | Node.js · Claude · Telegram | [**ABRIR ↗**](https://organizei.bsautomacao.com.br) |
 
 <img src="assets/sec-04.svg" width="75%" alt="04 // OPEN SOURCE">
