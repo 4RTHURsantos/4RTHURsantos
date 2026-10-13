@@ -43,7 +43,7 @@
 **Result:** no more re-registering products by hand, physical stock matches online sales, and changed SKUs are detected automatically. · `.NET` `RabbitMQ` `PostgreSQL` `Docker`
 
 ### Fechadin · Automated monthly tax closing for retail stores
-**93% fewer closing errors · ~40 h/month of manual work saved · 37 agents live**
+**88% fewer closing errors (17 → 2 stores/month) · ~40 h/month of manual work saved · 37 agents live**
 - Self-healing agent (Windows Service): a machine that was off on the 1st closes when it boots; if only the email failed, only the email is resent.
 - Sequential invoice numbering is the source of truth: it detects gaps, retransmitted invoices, and unauthorized ones.
 - Agents stream state to a real-time dashboard over SignalR; every alert reaches the log, the dashboard, the PDF, and the email.
