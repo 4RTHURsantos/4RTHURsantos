@@ -6,6 +6,7 @@
   <a href="https://jingg.dev"><img src="https://img.shields.io/badge/PORTFOLIO-jingg.dev-00a2ff?style=for-the-badge&labelColor=030d22" alt="Portfolio"></a>
   <a href="https://www.linkedin.com/in/jingg-developer/"><img src="https://img.shields.io/badge/LINKEDIN-jingg--developer-0052cc?style=for-the-badge&labelColor=030d22" alt="LinkedIn"></a>
   <a href="mailto:arthur.a.silvabs@gmail.com"><img src="https://img.shields.io/badge/E--MAIL-arthur.a.silvabs-00f0ff?style=for-the-badge&labelColor=030d22" alt="E-mail"></a>
+  <a href="https://jingg.dev/cv/arthur-silva-cv-en.pdf"><img src="https://img.shields.io/badge/R%C3%89SUM%C3%89-PDF-ffffff?style=for-the-badge&labelColor=030d22" alt="Résumé (PDF)"></a>
 </p>
 
 <img src="assets/sec-01.svg" width="75%" alt="01 // ABOUT ME">
@@ -16,6 +17,7 @@
 - 🎓 B.Sc. in Computer Science, expected 2028
 - 🌎 Advanced English · Portuguese (native)
 - 🛠️ Solo dev: architecture → production
+- 📍 Brazil · remote or on-site · open to relocation
 
 <img src="assets/sec-02.svg" width="75%" alt="02 // TECH STACK">
 
@@ -33,7 +35,7 @@
 > **Why does this profile look empty?** Almost everything I build runs in production for clients, so the repositories are **private**. Below is what each system does, the results it delivered, and how it was engineered. Redacted screenshots and full write-ups are at **[jingg.dev](https://jingg.dev)**.
 
 ### ABC Gateway · ERP ↔ Lexos integration for Loja ABC
-**~5 orders/min · ~3 s per sync batch · 0 errors in recent batches**
+**~5 orders/min · ~3 s per sync batch · 99.6% of batches error-free**
 - Incremental sync driven by the ERP's product revision number: it only runs when something changed.
 - RabbitMQ consumer with manual ack and prefetch 1: a message is only acknowledged after it's processed.
 - The API client honors `Retry-After` on rate limits, and the queue connection recovers on its own.
@@ -48,7 +50,7 @@
 
 **Result:** far fewer missing invoices and wrong reports, which used to mean fines, and accounting firms started referring new clients. · `.NET` `SignalR` `PostgreSQL` `React`
 
-### G7 Meet · AI meeting summaries with no bot in the call · [**open ↗**](https://reunioes.bsautomacao.com.br)
+### BS Reuniões · AI meeting summaries with no bot in the call · [**open ↗**](https://reunioes.bsautomacao.com.br)
 - System and microphone audio on separate channels tells who spoke without diarization.
 - Two-layer AI spend lock: at the route and right before every paid call.
 - CI/CD with an SSH key restricted to a single command plus a health check: no response in 30 s and the previous build is restored automatically.
@@ -83,8 +85,13 @@
 
 <img src="assets/sec-04.svg" width="75%" alt="04 // OPEN SOURCE">
 
+Generic rewrites of the flows behind my production systems: no client code, same engineering, with tests you can run.
+
 | Repository | |
 |---|---|
+| [**reliable-sync-gateway**](https://github.com/4RTHURsantos/reliable-sync-gateway) | ERP → e-commerce sync in .NET + RabbitMQ: incremental sync, at-least-once delivery with idempotent apply, retry and dead-letter queues, `Retry-After`. 87 tests, incl. Testcontainers |
+| [**self-healing-agents**](https://github.com/4RTHURsantos/self-healing-agents) | Monthly-closing agents that catch up after power loss and resume only the failed step, with sequence gap detection and a live SignalR dashboard. 31 tests |
+| [**mcp-server-production-template**](https://github.com/4RTHURsantos/mcp-server-production-template) | Multi-tenant MCP server in TypeScript: hashed tenant keys, per-plan quotas, Zod-validated tools, SSRF guard. 94 tests against real PostgreSQL |
 | [**cs16-web-windows**](https://github.com/4RTHURsantos/cs16-web-windows) | Counter-Strike 1.6 in the browser for LAN parties: one Docker container on Windows, everyone joins through a link |
 | [**ncm_certin**](https://github.com/4RTHURsantos/ncm_certin) | Validates product NCM codes in a spreadsheet against the official SISCOMEX table |
 
