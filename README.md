@@ -50,12 +50,28 @@
 
 **Result:** far fewer missing invoices and wrong reports, which used to mean fines, and accounting firms started referring new clients. · `.NET` `SignalR` `PostgreSQL` `React`
 
-### BS Reuniões · AI meeting summaries with no bot in the call · [**open ↗**](https://reunioes.bsautomacao.com.br)
+### AllMeet · AI meeting summaries with no bot in the call · Lead dev · [**open ↗**](https://reunioes.bsautomacao.com.br)
+**0 bots in the call · ~1 min delay on live transcription · US$0.11–0.35 of AI per meeting hour**
 - System and microphone audio on separate channels tells who spoke without diarization.
 - Two-layer AI spend lock: at the route and right before every paid call.
 - CI/CD with an SSH key restricted to a single command plus a health check: no response in 30 s and the previous build is restored automatically.
 
-**Result:** every meeting ends with a summary, critical points, and tasks created automatically. The internal tool became a product. · `Node.js` `Claude` `Whisper` `Swift`
+**Result:** every meeting ends with a summary, critical points, and tasks created automatically in Organizei. The internal tool became a product, now a BSchat module licensed per company. · `Node.js` `Claude` `AssemblyAI` `Whisper` `Swift`
+
+### Radar de Leads · AI-powered B2B prospecting · Lead dev · [**open ↗**](https://radarleads.bsautomacao.com.br)
+**0–100 score explained point by point · ~US$0.004 per website read by AI · 16 ready-made segments**
+- Pipeline: discovers companies on Google Maps, detects website signals (WhatsApp, chat, ad pixel, competitor), reads the content with ScrapeGraphAI + LLM, and scores each lead.
+- Score models stored in the database, editable without a deploy: weights, custom criteria, and yes/no questions for the AI, with a dry run before saving.
+- A "Manager" agent (Claude) answers questions about the operation using only numbers pulled from the database, auditable through an endpoint.
+
+**Result:** leads ranked by tier, with a diagnosis, a call script, and WhatsApp opened with the message ready. It became a multi-account product sold with BSchat and paid with credits. · `Python` `FastAPI` `Playwright` `ScrapeGraphAI` `Claude`
+
+### Organizei · Tasks, team, and calendar with an AI agent on Telegram · Lead dev · [**open ↗**](https://organizei.bsautomacao.com.br)
+- AI with brakes: on Telegram nothing is created or changed without confirmation, because teammates' text goes into the model context (prompt-injection defense).
+- Role-based permissions (owner, manager, member) enforced in the API, plus a daily AI spend cap per company.
+- Changing a password ends every open session and rotates the API token; Google and Microsoft calendar tokens are stored encrypted.
+
+**Result:** action items from every AllMeet meeting become tasks and events automatically, and managers see workload, delays, and pace on one dashboard. · `Node.js` `Claude` `Telegram` `Microsoft Graph`
 
 ### Reportadin · Multi-tenant reporting over ERP data · [**open ↗**](https://reportadin.bsautomacao.com.br)
 - Tenant isolation enforced in the ORM (global query filter), never in hand-written `WHERE` clauses: nothing leaks by omission.
@@ -79,7 +95,6 @@
 | **Lookchina Gateway** | ERP ↔ e-commerce integration for Grupo Lookchina, with queued orders and real-time catalog sync | 🔒 |
 | **Emitle** | SaaS for issuing Brazilian e-invoices (NF-e / NFC-e), multi-company, with an accountant dashboard | 🔒 |
 | **Assistente de Gestão** | Store owners query and operate the ERP by voice, with purchase-cost alerts | 🔒 |
-| **Organizei** | Tasks, team, and calendar, with an AI agent on Telegram that works as a secretary | [**open ↗**](https://organizei.bsautomacao.com.br) |
 
 </details>
 
